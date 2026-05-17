@@ -4,6 +4,7 @@
 #include "Utils.h"
 #include "Menu.h"
 #include "Draw.h"
+#include "esp_wifi.h"
 
 #include <WiFi.h>
 #include <WiFiMulti.h>
