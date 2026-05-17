@@ -144,18 +144,21 @@ void netInit(uint8_t netMode, bool showStatus)
     case NET_AP_ONLY:
       // Start WiFi access point if requested
       WiFi.mode(WIFI_AP);
+      esp_wifi_set_max_tx_power(8); // Set Tx Power to 2dBm
       // Let user see connection status if successful
       if(wifiInitAP() && showStatus) delay(2000);
       break;
     case NET_AP_CONNECT:
       // Start WiFi access point if requested
       WiFi.mode(WIFI_AP_STA);
+      esp_wifi_set_max_tx_power(8); // Set Tx Power to 2dBm
       // Let user see connection status if successful
       if(wifiInitAP() && showStatus) delay(2000);
       break;
     default:
       // No access point
       WiFi.mode(WIFI_STA);
+      esp_wifi_set_max_tx_power(8); // Set Tx Power to 2dBm
       break;
   }
 
