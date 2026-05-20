@@ -13,6 +13,8 @@ Based on the following sources:
 * G8PTN, Dave:       https://github.com/G8PTN/ATS_MINI
 
 ## Releases
+This release was launched in order to bypass a version 3S pcb 3.2 problem that reboots when WiFi is enabled, preventing to use EiBi and NPT.
+Probably it will work in other ats mini versions.
 
 Check out the [Releases](https://github.com/esp32-si4732/ats-mini/releases) page.
 
